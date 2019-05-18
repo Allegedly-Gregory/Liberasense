@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head % }
+  <link rel="stylesheet" href="style.css" />
+  <title> {% block title %}{% endblock %} - LiberSense</title>
+  {% endblock %}
+</head>
+<body>
+    <div class="sidenav">
+      <a href="huckleberryfinn">Huckleberryfinn</a>
+      <a href="frankenstein">Frankenstein</a>
+    </div>
+    <div class="content">
+      <h2>Welcome to LiberSense.io</h2>
+      <p>Bring the books you love to read to life.</p>
+    </div>
+  </body>
+    <div id="text|s">{% block content %}{% endblock %}</div>
+      {% raw % }
+
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2008 by <a href="">LiberSense</a>.
+        {% endblock %}
+    </div>
+</body>
+</html>

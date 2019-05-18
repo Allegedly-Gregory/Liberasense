@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LiberSense</title>
+            
+              <!-- Bootstrap core CSS -->
+              <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+            
+              <!-- Custom styles for this template -->
+              <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+              <link href="/static/css/shop-item.css" rel="stylesheet">
+                <link href="/static/css/books.css" rel="stylesheet">
+            </head>
+            
+            <body>
+            
+              <!-- Navigation -->
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                  <a class="navbar-brand" href="/">LiberSense</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/">Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class='spacer'></div>
+            
+              <!-- Page Content -->
+              <div class="container">
+            
+                <div class="row">
+
+                  <!-- /.col-lg-3 -->
+                  <div class="col-lg-9">
+                    {% block content %}
+
+                    <div class="card mt-4">
+                      <img class="card-img-top img-fluid" src="/static/sense-logo.png" alt="">
+                    </div>
+                    <p><em>Bringing Books To Life with Artificial Intelligence</em></p>
+
+                    {% endblock %}
+
+                  </div>
+                  <!-- /.col-lg-9 -->
+                  <div class="col-lg-3">
+                        {% block linklist %}
+
+                    <h1 class="my-4">Books</h1>
+                    <div class="list-group">
+                      <a href="/book/frankenstein" class="list-group-item ">Frankenstein</a>
+                      <a href="/book/huckleberry" class="list-group-item">Huckleberry Finn</a>
+                      <a href="/book/twocities" class="list-group-item">A Tale of Two Cities</a>
+
+                    </div>
+                    {% endblock %}
+
+                  </div>
+                </div>
+            
+              </div>
+              <!-- /.container -->
+            
+              <!-- Footer -->
+              <footer class="py-5 bg-dark">
+                <div class="container">
+                  <p class="m-0 text-center text-white">Copyright &copy; Greg Stannard 2019</p>
+                </div>
+                <!-- /.container -->
+              </footer>
+              <!-- Bootstrap core JavaScript -->
+              <script src="/static/vendor/jquery/jquery.min.js"></script>
+              <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            
+            </body>
+            
+            </html>
+            </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>

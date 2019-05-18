@@ -1,0 +1,108 @@
+* {
+    font-family: 'Noto Sans', helvetica, sans-serif;
+}
+
+* p {
+    font-family: 'Roboto Slab', Georgia, 'Times New Roman', serif;
+}
+
+.chapterview table {
+    width: 100%
+}
+
+h1 {
+    border-bottom: solid 1px black;
+}
+
+.chapterview table td {
+    width: 33%;
+    font-size: 20px;
+    background-color: #8fa8b8;
+    padding: 8px 16px;
+}
+
+.chapterview table a {
+    color: black;
+}
+
+.chapterview table a:hover {
+    color: #777;
+}
+
+.chapterview table td.next {
+    text-align: right;
+}
+
+.chapterview span {font-size: 24px; line-height: 26px; font-weight: bold;}
+span.sc01 {background-color:#e44138; color: #ff8;}
+span.sc02 {background-color:  #da6258; color: #ff8;}
+span.sc03 {background-color: #cb928f; color: #ffa;}
+span.sc04 {background-color:  #c2b4b4; color: #222;}
+span.sc05 {background-color:  #b3babd; color: #222}
+span.sc06 {background-color:  #8fa8b8; color: #fff}
+span.sc07 {background-color:  #568db0; color: #fff}
+span.sc08 {background-color:  #316bab; color: #eee}
+
+.chapterview p {border-width: 0px 4px 0px 4px; border-style: solid; padding:0px 10px;}
+
+p.sc01 {border-color: #e44138;}
+p.sc02 {border-color:  #da6258;}
+p.sc03 {border-color: #cb928f;}
+p.sc04 {border-color:  #c2b4b4;}
+p.sc05 {border-color:  #b3babd;}
+p.sc06 {border-color:  #8fa8b8;}
+p.sc07 {border-color:  #568db0;}
+p.sc08 {border-color:  #316bab;}
+
+/*
+.chapterview p {
+    margin-bottom: 20px;
+}
+
+.chapterview p div {
+    background-color: white;
+    margin-left:20px;
+    margin-right:20px;
+}
+*/
+
+.bookview div.chap {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: solid black 1px;
+    background-color: #ccc;
+}
+
+.bookview div a {
+    color: black;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+a.list-group-item {
+    font-size: 18px;
+    color: black;
+}
+a.list-group-item.active {
+    background-color: #ccc;
+}
+
+nav {
+    margin-bottom: 40px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0px 30px 20px;
+}
+
+td.title {
+    font-size: 28px;
+    text-decoration: underline;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='bookview'>
+<h1>{{title}}</h1>
+
+<div class='chapterlist'>
+   {% for link in chaplinks %}
+        <div class='chap'>{{link|safe}}</div><div></div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}

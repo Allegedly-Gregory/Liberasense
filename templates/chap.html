@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block linklist %}
+<h3 class="my-4">Chapters</h3>
+                    <div class="list-group">
+                        {% for link in chaplinks %}
+                            {{link|safe}}
+                        {% endfor %}
+                    </div>
+{% endblock %}
+
+{% block content %}
+<div class='chapterview'>
+
+<div class="topnav">
+    <table>
+        <tr>
+            <td class='prev'>
+                {% if plink %}
+                <a href="{{plink}}">prev</a>
+                {% endif %}
+            </td>
+            <td class='title'>
+                <a href="{{booklink}}">{{booktitle}}</a>
+            </td>
+            <td class='next'> 
+                {% if nlink %}
+                <a href="{{nlink}}">next</a>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+<h2>Chapter {{chapnum}} </h2>
+{{html|safe}}
+
+<div class="bottomnav">
+    <table>
+        <tr>
+                <td class='prev'>
+                        {% if plink %}
+                        <a href="{{plink}}">prev</a>
+                        {% endif %}
+                    </td>
+            <td class='title'>
+                <a href="{{booklink}}">{{booktitle}}</a>
+            </td>
+            <td class='next'>
+            {% if nlink %}
+            <a href="{{nlink}}">next</a>
+            {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+</div>
+{% endblock %}
